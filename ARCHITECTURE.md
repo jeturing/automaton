@@ -53,7 +53,7 @@ Conway Automaton is a sovereign AI agent runtime. An automaton owns an Ethereum 
 |       v                  v                                            |
 |  +-----------+    +-------------+    +-----------+    +----------+   |
 |  | Tick      |    | Tool System |    | Policy    |    | Soul     |   |
-|  | Context   |    | (57 tools)  |    | Engine    |    | Model    |   |
+|  | Context   |    | (69 tools)  |    | Engine    |    | Model    |   |
 |  +-----------+    +------+------+    +-----------+    +----------+   |
 |                          |                                            |
 |  +-----------------------------------------------------------+      |
@@ -137,7 +137,7 @@ src/
 
   agent/                   Core agent intelligence
     loop.ts                ReAct loop (think -> act -> observe -> persist)
-    tools.ts               57 built-in tool definitions + executor
+    tools.ts               69 built-in tool definitions + executor
     system-prompt.ts       Multi-layered prompt builder
     context.ts             Inference message assembly + token budgeting
     injection-defense.ts   Input sanitization (8 detection checks)
@@ -252,7 +252,7 @@ src/
     monitor.ts             Resource status + tier transitions
     low-compute.ts         Low-compute mode configuration
 
-  __tests__/               Test suite (24 test files, 897 tests)
+  __tests__/               Test suite (26 test files, 990 tests)
 ```
 
 ---
@@ -314,7 +314,7 @@ for each turn:
 
 **File:** `src/agent/tools.ts`
 
-The automaton has **57 built-in tools** organized into 10 categories:
+The automaton has **69 built-in tools** organized into 10 categories:
 
 | Category | Count | Tools |
 |---|---|---|
@@ -740,7 +740,7 @@ The automaton operates under a defense-in-depth security model:
 
 ## Testing
 
-**Location:** `src/__tests__/` — 24 test files, 897 tests
+**Location:** `src/__tests__/` — 26 test files, 990 tests
 
 | Area | Files | Tests |
 |---|---|---|
@@ -771,7 +771,7 @@ The automaton operates under a defense-in-depth security model:
 
 ```
 pnpm build       # tsc + workspace builds
-pnpm test        # vitest run (897 tests)
+pnpm test        # vitest run (990 tests)
 pnpm typecheck   # tsc --noEmit
 ```
 
