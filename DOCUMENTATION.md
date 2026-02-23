@@ -87,7 +87,7 @@ pnpm build
 
 ```bash
 pnpm typecheck   # TypeScript type checking
-pnpm test        # Run all 897 tests
+pnpm test        # Run all 990 tests
 ```
 
 ### File locations after setup
