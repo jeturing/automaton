@@ -123,7 +123,7 @@ An Ethereum wallet is generated automatically using `viem`. The private key is s
 
 ```
 [1/6] Generating identity (wallet)...
-Wallet created: 0x1234...abcd
+Wallet created: 0xBFCD4004CE7bF1CB75B4c85b2fc9208693a29073
 Private key stored at: /root/.automaton/wallet.json
 ```
 
@@ -134,6 +134,14 @@ The runtime signs a SIWE (Sign-In With Ethereum) message to authenticate with Co
 ```
 [2/6] Provisioning Conway API key (SIWE)...
 API key provisioned: cnwy_k_...
+
+Sign in to Conway
+
+URI: https://app.conway.tech
+Version: 1
+Chain ID: 8453
+Nonce: b1e14b1422e5a24f476f2cfd68def403
+Issued At: 2026-02-24T17:39:33.514Z
 ```
 
 ### Step 3: Interactive Questions
